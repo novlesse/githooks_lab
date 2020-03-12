@@ -1,0 +1,30 @@
+{
+  "name": "week_9_git_hooks_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "git add .",
+      "post-commit": "git push -u origin master",
+      "pre-push": "git branch"
+    }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novlesse/githooks_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novlesse/githooks_lab/issues"
+  },
+  "homepage": "https://github.com/novlesse/githooks_lab#readme"
+}
